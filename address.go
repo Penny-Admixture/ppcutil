@@ -12,9 +12,9 @@ import (
 	"strings"
 
 	"github.com/btcsuite/btcd/btcec"
-	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/btcsuite/btcutil/bech32"
+	"github.com/ppcsuite/btcd/chaincfg"
 	"golang.org/x/crypto/ripemd160"
 )
 
@@ -135,8 +135,8 @@ type Address interface {
 // public key, the address will be associated with the passed defaultNet.
 func DecodeAddress(addr string, defaultNet *chaincfg.Params) (Address, error) {
 	// Bech32 encoded segwit addresses start with a human-readable part
-	// (hrp) followed by '1'. For Bitcoin mainnet the hrp is "bc", and for
-	// testnet it is "tb". If the address string has a prefix that matches
+	// (hrp) followed by 'P'. For Peercoin mainnet the hrp is "pc", and for
+	// testnet it is "tpc". If the address string has a prefix that matches
 	// one of the prefixes for the known networks, we try to decode it as
 	// a segwit address.
 	oneIndex := strings.LastIndexByte(addr, '1')
