@@ -2,7 +2,7 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil
+package ppcutil
 
 import (
 	"bytes"
@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/btcsuite/btcd/btcec"
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/btcsuite/btcutil/bech32"
-	"github.com/ppcsuite/btcd/chaincfg"
+	"github.com/btcsuite/btcutil/btcec"
+	"github.com/peercoin/ppcd/chaincfg"
 	"golang.org/x/crypto/ripemd160"
 )
 

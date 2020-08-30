@@ -2,7 +2,7 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil_test
+package ppcutil_test
 
 import (
 	"bytes"
@@ -12,9 +12,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/btcsuite/btcutil"
+	"github.com/peercoin/ppcd/chaincfg"
 	"golang.org/x/crypto/ripemd160"
 )
 
